@@ -1,127 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="main.js" defer></script>
-    <title>TCC</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar wrapper">
-        <ul
-          class="menu"
-          aria-label="Menu de navegação"
-          role="navigation"
-          id="menu"
-        >
-          <li><a href="#">Ir para a busca</a></li>
-          <li><a href="#">Ir para o menu</a></li>
-          <li><a href="#">Ir par ao rodapé</a></li>
-          <li><a href="#">Mapa do site</a></li>
-        </ul>
 
-        <div class="controls">
-          <button id="increase-font">A+</button>
-          <button id="high-contrast">A-</button>
-          <button id="toggle-button">
-            <img src="./imgs/contrast.svg" alt="Contraste" />
-          </button>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
+  <title>TCC</title>
+</head>
 
-      <div class="logo-search wrapper">
-        <p
-          style="
+<body>
+  <header>
+    <nav class="navbar wrapper">
+      <ul class="menu" aria-label="Menu de navegação" role="navigation" id="menu">
+        <li><a href="#">Ir para a busca</a></li>
+        <li><a href="#">Ir para o menu</a></li>
+        <li><a href="#">Ir par ao rodapé</a></li>
+        <li><a href="#">Mapa do site</a></li>
+      </ul>
+
+      <div class="controls">
+        <button id="increase-font">A+</button>
+        <button id="high-contrast">A-</button>
+        <button id="toggle-button">
+          <img src="./imgs/contrast.svg" alt="Contraste" />
+        </button>
+      </div>
+    </nav>
+
+    <div class="logo-search wrapper">
+      <p style="
             height: 103px;
             display: flex;
             align-items: center;
             justify-content: center;
-          "
-        >
-          LOGO
-        </p>
-        <!-- deixei fixo pq não tem icone -->
-        <div class="search-container">
-          <input type="text" placeholder="Buscar..." class="search-box" />
-          <img src="./imgs/mic.svg" alt="Microfone" class="mic-icon" />
-        </div>
-        <div class="interactions">
-          <button class="interaction-icon" aria-label="Carrinho">
-            <img src="./imgs/cart.svg" alt="Carrinho" />
-          </button>
-          <button class="interaction-icon" aria-label="Notificações">
-            <img src="./imgs/notification.svg" alt="Notificações" />
-          </button>
-          <button class="interaction-icon" aria-label="Favoritos">
-            <img src="./imgs/favorites.svg" alt="Favoritos" />
-          </button>
-        </div>
+          ">
+        LOGO
+      </p>
+      <!-- deixei fixo pq não tem icone -->
+      <div class="search-container">
+        <input type="text" placeholder="Buscar..." class="search-box" />
+        <img src="./imgs/mic.svg" alt="Microfone" class="mic-icon" />
       </div>
-    </header>
+      <div class="interactions">
+        <button class="interaction-icon" aria-label="Carrinho">
+          <img src="./imgs/cart.svg" alt="Carrinho" />
+        </button>
+        <button class="interaction-icon" aria-label="Notificações">
+          <img src="./imgs/notification.svg" alt="Notificações" />
+        </button>
+        <button class="interaction-icon" aria-label="Favoritos">
+          <img src="./imgs/favorites.svg" alt="Favoritos" />
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <nav class="options">
-      <ul
-        class="options-list wrapper"
-        aria-label="Menu de opções"
-        role="navigation"
-        id="options"
-      >
+  <nav class="options">
+    <ul class="options-list wrapper" aria-label="Menu de opções" role="navigation" id="options">
+      <li>
+        <div class="shortcut">6</div>
+        Anunciar
+      </li>
+      <li>
+        <div class="shortcut">7</div>
+        Ofertas
+      </li>
+      <li>
+        <div class="shortcut">8</div>
+        Categorias
+      </li>
+      <li>
+        <div class="shortcut">9</div>
+        Minhas Conta
+      </li>
+      <li>
+        <div class="shortcut">S</div>
+        Suporte
+      </li>
+    </ul>
+  </nav>
+
+  <main class="container-main">
+    <section class="slider-container wrapper">
+      <button class="slider-arrow slider-arrow-left">
+        <img src="imgs/angle-right.png" alt="Seta para esquerda" />
+      </button>
+      <ul class="carrosel">
         <li>
-          <div class="shortcut">6</div>
-          Anunciar
-        </li>
-        <li>
-          <div class="shortcut">7</div>
-          Ofertas
-        </li>
-        <li>
-          <div class="shortcut">8</div>
-          Categorias
-        </li>
-        <li>
-          <div class="shortcut">9</div>
-          Minhas Conta
-        </li>
-        <li>
-          <div class="shortcut">S</div>
-          Suporte
+          <figure>
+            <img src="imgs/banner1.jpg" alt="Primeiro Banner">
+          </figure>
+          <p>
+            LEGENDA  DA IMAGEM AQUI
+          </p>
         </li>
       </ul>
-    </nav>
+      <button class="slider-arrow slider-arrow-right">
+        <img src="imgs/angle-right.png" alt="Seta para direita" />
+      </button>
 
-    <main
-      style="min-height: 50vh; display: flex; justify-content: center; align-items: center;"
-    >
+      <ul class="slider-caixa-selecao">
+        <li class="slider-caixa-selecao-item"></li>
+        <li class="slider-caixa-selecao-item"></li>
+        <li class="slider-caixa-selecao-item"></li>
+      </ul>
+    </section>
 
-    <div class="cards">
+    <!-- <div class="cards">
       <div class="card">
         <h3>PRA VOCÊ</h3>
         <img src="./imgs/meias.png" alt="Meias" />
       </div>
-    </div>
+    </div> -->
 
-    </main>
+  </main>
 
 
-    <footer>
-      <div class="wrapper">
+  <footer>
+    <div class="wrapper">
 
-        <ul
-          class="footer-list"
-          aria-label="Menu de navegação"
-          role="navigation"
-          id="footer-menu"
-        >
-          <li>Contato</li>
-          <li>Acessibilidade</li>
-          <li>Programa de Afiliados</li>
-          <li>Termos e condições</li>
-          <li>Trabalhe conosco</li>
-          <li>Black Friday</li>
-          <li>Promoções</li>
-        </ul>
-    </footer>
-  </body>
+      <ul class="footer-list" aria-label="Menu de navegação" role="navigation" id="footer-menu">
+        <li>Contato</li>
+        <li>Acessibilidade</li>
+        <li>Programa de Afiliados</li>
+        <li>Termos e condições</li>
+        <li>Trabalhe conosco</li>
+        <li>Black Friday</li>
+        <li>Promoções</li>
+      </ul>
+  </footer>
+</body>
+
 </html>
