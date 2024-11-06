@@ -1,0 +1,23 @@
+{
+  "name": "tcc-vinicius",
+  "version": "1.0.0",
+  "description": "Projeto De Acessibilidade",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "sass:watch": "sass --watch assets/sass/main.scss:assets/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franproque/tcc-vinicius.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franproque/tcc-vinicius/issues"
+  },
+  "homepage": "https://github.com/franproque/tcc-vinicius#readme",
+  "dependencies": {
+    "sass": "^1.80.6"
+  }
+}
