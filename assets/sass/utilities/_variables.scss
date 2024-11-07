@@ -1,7 +1,36 @@
 $first-menu-background-color: #212529;
 $first-menu-font-color: #f8f9fa;
 
-:root {
+$white: #fff;
+$white-100: #f0f0f0;
+
+$black: #000;
+$black-middle: rgba(0, 0, 0, 0.5);
+
+$blue-lighthen: rgba(248, 249, 250, 1);
+$blue-light: rgba(208, 231, 255, 1);
+$blue: #1d4a72;
+
+$gray-default: #333;
+
+body {
   --first-menu-background-color: #{$first-menu-background-color};
   --first-menu-font-color: #{$first-menu-font-color};
+
+  --white: #{$white};
+  --white-100: #{$white-100};
+
+  --black: #{$black};
+  --black-middle: #{$black-middle};
+
+  --blue-lighthen: #{$blue-lighthen};
+  --blue-light: #{$blue-light};
+  --blue: #{$blue};
+
+  --gray-default: #{$gray-default};
+}
+
+body.dark-mode {
+  --first-menu-background-color: red;
+  --first-menu-font-color: white;
 }

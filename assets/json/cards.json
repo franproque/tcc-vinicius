@@ -1,0 +1,121 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "category": "Celulares",
+      "note": 5.0,
+      "price": "R$1.025,10",
+      "original_price": "R$2.100,83",
+      "description": "e frete grátis na sua primeira compra"
+    },
+    {
+      "id": 2,
+      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "category": "Celulares",
+      "note": 5.0,
+      "price": "R$1.025,10",
+      "original_price": "R$2.100,83",
+      "description": "e frete grátis na sua primeira compra"
+    },
+    {
+      "id": 3,
+      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "category": "Celulares",
+      "note": 5.0,
+      "price": "R$1.025,10",
+      "original_price": "R$2.100,83",
+      "description": "e frete grátis na sua primeira compra"
+    },
+    {
+      "id": 4,
+      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "category": "Celulares",
+      "note": 5.0,
+      "price": "R$1.025,10",
+      "original_price": "R$2.100,83",
+      "description": "e frete grátis na sua primeira compra"
+    },
+    {
+      "id": 5,
+      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "category": "Celulares",
+      "note": 5.0,
+      "price": "R$1.025,10",
+      "original_price": "R$2.100,83",
+      "description": "e frete grátis na sua primeira compra"
+    },
+    {
+      "id": 6,
+      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "category": "Celulares",
+      "note": 5.0,
+      "price": "R$1.025,10",
+      "original_price": "R$2.100,83",
+      "description": "e frete grátis na sua primeira compra"
+    },
+    {
+      "id": 7,
+      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "category": "Celulares",
+      "note": 5.0,
+      "price": "R$1.025,10",
+      "original_price": "R$2.100,83",
+      "description": "e frete grátis na sua primeira compra"
+    },
+    {
+      "id": 8,
+      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "category": "Celulares",
+      "note": 5.0,
+      "price": "R$1.025,10",
+      "original_price": "R$2.100,83",
+      "description": "e frete grátis na sua primeira compra"
+    },
+    {
+      "id": 9,
+      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "category": "Celulares",
+      "note": 5.0,
+      "price": "R$1.025,10",
+      "original_price": "R$2.100,83",
+      "description": "e frete grátis na sua primeira compra"
+    },
+    {
+      "id": 10,
+      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "category": "Ofertas especiais",
+      "note": 5.0,
+      "price": "R$1.025,10",
+      "original_price": "R$2.100,83",
+      "description": "Ótimo celular Samsung Galaxy A15 com DUAL SIM, 5G e 128gb"
+    },
+    {
+      "id": 11,
+      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "category": "Ofertas especiais",
+      "note": 5.0,
+      "price": "R$1.025,10",
+      "original_price": "R$2.100,83",
+      "description": "Ótimo celular Samsung Galaxy A15 com DUAL SIM, 5G e 128gb"
+    },
+    {
+      "id": 12,
+      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "category": "Ofertas especiais",
+      "note": 5.0,
+      "price": "R$1.025,10",
+      "original_price": "R$2.100,83",
+      "description": "Ótimo celular Samsung Galaxy A15 com DUAL SIM, 5G e 128gb"
+    },
+    {
+      "id": 13,
+      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "category": "Ofertas especiais",
+      "note": 5.0,
+      "price": "R$1.025,10",
+      "original_price": "R$2.100,83",
+      "description": "Ótimo celular Samsung Galaxy A15 com DUAL SIM, 5G e 128gb"
+    }
+  ]
+}

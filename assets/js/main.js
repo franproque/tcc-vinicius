@@ -1,24 +1,24 @@
 import FontSize from './controllers/font-size.js'
+import Contrast from './controllers/contrast.js';
 import ActionTags from './utils/tags.js'
+import Voice from './controllers/voice.js';
+import ShortCut from './controllers/shortcut.js';
+import spoken from '../../node_modules/spoken/build/spoken.js';
 
 window.addEventListener('DOMContentLoaded', function () {
-  /* const toggleButton = document.getElementById('toggle-button');
-
-  toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-  }); */
+  // Constants
   const localStorageFont = localStorage.getItem('font-size')
 
-  const fontSize = new FontSize(localStorageFont)
+  // Classes Instances
   const actionTags = new ActionTags()
+  const fontSize = new FontSize(localStorageFont, actionTags)
+  const contrast = new Contrast()
+  const voice = new Voice(actionTags, spoken)
+  const shortcut = new ShortCut(actionTags)
 
   fontSize.execute()
-
-  actionTags.increaseFontSizeTag.addEventListener('click', function () {
-    fontSize.increaseFontSize()
-  })
-  actionTags.decrementFontSizeTag.addEventListener('click', function () {
-    fontSize.increaseFontSize()
-  })
+  contrast.execute()
+  shortcut.execute()
+  voice.execute()
 })
 

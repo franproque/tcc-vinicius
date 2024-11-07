@@ -14,25 +14,26 @@
 </head>
 
 <body>
-  <header>
-    <section class="navbar-first">
-      <nav class="wrapper menu-first" aria-label="Menu de navegação" role="navigation">
-        <ul>
+  <header class="header">
+    <section class="header__navbar">
+      <nav class="wrapper" aria-label="Menu de navegação" role="navigation">
+        <ul class="header__navbar-items">
           <li>
-            <span>1</span> <a href="">Ir para a busca</a>
+            <span>1</span> <a href="#logo-and-search" aria-label="Ir para a busca" role="link" accesskey="1">Ir para a
+              busca</a>
           </li>
           <li>
-            <span>2</span> <a href="">Ir para o menu</a>
+            <span>2</span> <a href="" aria-label="Ir para o menu" role="link" accesskey="2">Ir para o menu</a>
           </li>
 
           <li>
-            <span>3</span> <a href="">Ir para o rodapé</a>
+            <span>3</span> <a href="" role="link" aria-label="Ir para o rodapé" accesskey="3">Ir para o rodapé</a>
           </li>
           <li>
-            <span>4</span> <a href="">Mapa do site</a>
+            <span>4</span> <a href="" role="link" aria-label="Mapa do site" accesskey="4">Mapa do site</a>
           </li>
         </ul>
-        <div class="controls">
+        <div class="header__controls">
           <button class="button-font-increment button-font">A+</button>
           <button class="button-font-decrement button-font">A-</button>
           <button class="button-dark-mode">
@@ -43,26 +44,31 @@
 
     </section>
 
-    <section class="container-logo-and-search">
+    <section class="header__logo-and-search" id="logo-and-search">
       <div class="wrapper">
-        <a href="#" class="logo">LOGO SITE</a>
+        <h1><a href="#" class="logo">LOGO SITE</a></h1>
 
         <form class="form-search" method="get">
           <input type="search" name="search" id="search" placeholder="Buscar">
-          <figure>
-            <img src="imgs/microfone.svg" alt="Microfone de busca">
-          </figure>
+          <button class="header__search-mic search-mic" type="button">
+            <img class="image active" src="imgs/microfone.svg" alt="Microfone de busca">
+            <div class="speaking">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
           <button type="submit">Buscar</button>
         </form>
 
-        <div class="perfil">
+        <div class="header__profile">
           <figure>
             <img src="imgs/perfil.jpg" width="73" height="71" alt="Foto de perfil">
           </figure>
           <div>
-            <span>
+            <h2>
               Olá, Vinicius Germano!
-            </span>
+            </h2>
             <p>
               Rua X, 2024. Jd. São Paulo
             </p>
@@ -70,9 +76,58 @@
         </div>
       </div>
     </section>
+    <section class="header__menu">
+      <div class="wrapper">
+        <nav role="navigation">
+          <ul class="header__menu-items">
+            <li><span>5</span> <a href="">Ínicio</a></li>
+            <li><span>6</span> <a href="">Anunciar</a></li>
+            <li><span>7</span> <a href="">Quero Comprar</a></li>
+            <li><span>8</span> <a href="">Minha Conta</a></li>
+            <li><span>S</span> <a href="">Suporte</a></li>
+          </ul>
+          <div class="header__cart">
+            <figure>
+              <img src="./assets/svg/cart.svg" />
+            </figure>
+            <span>R$</span>
+          </div>
+        </nav>
+      </div>
+    </section>
   </header>
 
+  <main>
+    <section class="t-banner">
+      <h2></h2>
+      <p></p>
+
+      <a href=""></a>
+      <a href=""></a>
+
+      <ul role="listbox">
+        <li>
+          <figure><img src="" alt="" /></figure>
+          <p></p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer></footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="assets/js/libs/shortcut.js"></script>
   <script type="module" src="assets/js/main.js"></script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 </body>
 
 </html>
