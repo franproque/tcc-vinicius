@@ -1,12 +1,5 @@
 
 export default class ActionTags {
-  increaseFontSizeTag
-  decrementFontSizeTag
-  searchMic
-  searchImage
-  searchSpeaking
-  searchInput
-  firstAnchorNavigation
 
   constructor() {
     this.increaseFontSizeTag = document.querySelector('.button-font-increment')
@@ -19,5 +12,15 @@ export default class ActionTags {
     this.secondAnchorNavigation = document.querySelector('.header__navbar-items li:nth-of-type(2) > a')
     this.thirdAnchorNavigation = document.querySelector('.header__navbar-items li:nth-of-type(3) > a')
     this.fourthAnchorNavigation = document.querySelector('.header__navbar-items li:nth-of-type(4) > a')
+    this.fivethAnchorNavigation = document.querySelector('.header__menu-items li:first-of-type > a')
+    this.sixthAnchorNavigation = document.querySelector('.header__menu-items li:nth-of-type(2) > a')
+    this.seventhAnchorNavigation = document.querySelector('.header__menu-items li:nth-of-type(3) > a')
+
+    this.menuCategory = document.querySelectorAll('.s-category ul li')
+    this.containerProducts = document.querySelector('.l-products__cards')
+    this.containerPagination = document.querySelector('.l-products__pagination')
+
+    this.containerCart = document.querySelector('.header__cart span')
+
   }
 }

@@ -1,0 +1,52 @@
+.l-products {
+  container-type: inline-size;
+
+  & h2 {
+    font-size: clamp(3.4rem, 3.8cqi, 3.8rem);
+    line-height: clamp(3rem, 3.5cqi, 3.5rem);
+    font-weight: 700;
+    text-align: center;
+    color: var(--blue);
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(25rem, 40rem));
+    gap: clamp(2.5rem, 4cqi, 4rem);
+    justify-content: center;
+
+    &:has(h2) {
+      min-height: 50rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__pagination {
+    margin-top: clamp(3rem, 5cqi, 5rem);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    & button {
+      border-radius: 50%;
+      width: 4.4rem;
+      height: 4.4rem;
+      font-size: clamp(2.4rem, 2.8cqi, 2.8rem);
+      line-height: clamp(3rem, 3.5cqi, 3.5rem);
+      font-weight: 600;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s ease-in-out;
+
+      &.active {
+        background-color: var(--blue);
+        color: var(--white);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}

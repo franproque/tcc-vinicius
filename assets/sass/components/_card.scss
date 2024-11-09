@@ -1,0 +1,99 @@
+.card {
+  flex: 1;
+  border: 1px solid var(--black);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-flow: column;
+
+  &__category-and-note {
+    margin-top: 1rem;
+
+    & span {
+      font-size: clamp(1.6rem, 2cqi, 2rem);
+      line-height: clamp(3rem, 3.5cqi, 3.5rem);
+      font-weight: 400;
+      color: var(--blue);
+
+      &:last-of-type {
+        color: var(--black);
+        font-weight: 700;
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+
+        &::before {
+          content: "";
+          background-image: url("/assets/svg/star.svg");
+          width: 3rem;
+          height: 3rem;
+          display: block;
+          margin-bottom: 0.9rem;
+        }
+      }
+    }
+  }
+
+  &__price-and-promotion {
+    margin: 2rem 0;
+
+    & h4 {
+      display: flex;
+      flex-flow: column;
+
+      & span {
+        &:first-of-type {
+          font-size: clamp(2.4rem, 2.8cqi, 2.8rem);
+          line-height: clamp(3rem, 3.5cqi, 3.5rem);
+          font-weight: 600;
+          text-align: center;
+        }
+
+        &:last-of-type {
+          font-size: clamp(1.6rem, 2cqi, 2rem);
+          line-height: clamp(3rem, 3.5cqi, 3.5rem);
+          font-weight: 400;
+          text-decoration: line-through;
+          color: var(--gray-300);
+        }
+      }
+    }
+
+    & > span {
+      color: var(--green);
+      font-size: clamp(1.6rem, 2cqi, 2rem);
+      line-height: clamp(3rem, 3.5cqi, 3.5rem);
+      font-weight: 400;
+    }
+  }
+
+  & h3 {
+    font-size: clamp(1.6rem, 2cqi, 2rem);
+    line-height: clamp(3rem, 3.5cqi, 3.5rem);
+    font-weight: 700;
+  }
+
+  & p {
+    font-size: clamp(1.6rem, 2cqi, 2rem);
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+  }
+
+  & figure {
+    background-color: var(--blue-light);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  & div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & > button {
+    margin-top: auto;
+  }
+}

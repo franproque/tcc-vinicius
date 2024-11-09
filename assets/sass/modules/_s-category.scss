@@ -1,0 +1,100 @@
+.s-category {
+  container-type: inline-size;
+  padding: clamp(3.5rem, 4vw, 4rem) 0;
+
+  & h2 {
+    font-size: clamp(2.4rem, 2.8cqi, 2.8rem);
+    line-height: clamp(3rem, 3.5cqi, 3.5rem);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    &::before,
+    &::after {
+      content: "";
+      flex: 1;
+      display: block;
+      background-color: var(--black);
+      height: 1px;
+      width: 100%;
+    }
+
+    &::after {
+      right: 0;
+      margin-left: 3rem;
+    }
+
+    &::before {
+      left: 0;
+      margin-right: 3rem;
+    }
+
+    & span {
+      color: var(--blue-clean);
+    }
+  }
+
+  & h3 {
+    font-size: clamp(1.6rem, 2cqi, 2rem);
+    line-height: clamp(3rem, 3.5cqi, 3.5rem);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  & p {
+    font-size: clamp(1.6rem, 2cqi, 2rem);
+    line-height: clamp(3rem, 3.5cqi, 3.5rem);
+    font-weight: 400;
+    text-align: center;
+  }
+
+  & nav {
+    background-color: var(--gray-100);
+    border-top: 1px solid var(--gray-200);
+    border-bottom: 1px solid var(--gray-200);
+    margin-top: clamp(1.4rem, 1.7cqi, 1.7rem);
+  }
+
+  & ul {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+
+    & li {
+      display: flex;
+      align-items: center;
+      padding: 2rem 0;
+
+      & > span {
+        font-size: 2rem;
+        color: var(--black);
+        margin-left: 3rem;
+      }
+    }
+
+    & button {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: clamp(1.6rem, 2cqi, 2rem);
+      line-height: clamp(3rem, 3.5cqi, 3.5rem);
+      font-weight: 400;
+      transition: all 0.2s ease-in-out;
+
+      &.active {
+        color: var(--blue-clean);
+        font-weight: 700;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    & img {
+      min-width: 3rem;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.cart {
+  background-color: var(--blue-light);
+  border-radius: 50rem;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  transition: all 0.2s ease-in-out;
+
+  & figure {
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & span {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: clamp(1.6rem, 2cqi, 2rem);
+  }
+
+  &:hover {
+    scale: 0.95;
+    opacity: 0.7;
+  }
+}

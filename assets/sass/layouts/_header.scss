@@ -22,7 +22,8 @@
     display: flex;
     align-items: center;
     height: 100%;
-    gap: 3.6rem;
+    gap: clamp(2rem, 2.6cqi, 3.6rem);
+    margin-right: 1rem;
 
     & li {
       display: flex;
@@ -80,7 +81,7 @@
       color: var(--first-menu-font-color);
       line-height: 3.5rem;
       font-size: clamp(1.6rem, 2cqi, 2rem);
-      text-align: center;
+      text-align: left;
       text-decoration: underline;
       text-decoration-thickness: 2px;
       text-underline-offset: 5px;
@@ -285,11 +286,12 @@
   }
 
   &__menu {
+    margin: clamp(2.4rem, 2.6cqi, 2.6rem) 0;
+
     & nav {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      margin: clamp(2.4rem, 2.6cqi, 2.6rem) 0;
     }
   }
 
@@ -323,34 +325,6 @@
       text-underline-offset: 5px;
       font-weight: 400;
       margin-left: 0.8rem;
-    }
-  }
-
-  &__cart {
-    background-color: var(--blue-light);
-    border-radius: 50rem;
-    width: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-
-    & figure {
-      background-color: var(--white);
-      border-radius: 50%;
-      padding: 0.5rem;
-      width: 4rem;
-      height: 4rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    & span {
-      color: var(--blue);
-      font-weight: 700;
-      font-size: clamp(1.6rem, 2cqi, 2rem);
     }
   }
 }

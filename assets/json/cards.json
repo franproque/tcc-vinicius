@@ -2,120 +2,133 @@
   "cards": [
     {
       "id": 1,
+      "image": "/assets/img/product.png",
       "title": "Samsung Galaxy A15 Dual SIM 5G",
       "category": "Celulares",
       "note": 5.0,
       "price": "R$1.025,10",
       "original_price": "R$2.100,83",
-      "description": "e frete grátis na sua primeira compra"
+      "description": "Frete grátis na primeira compra"
     },
     {
       "id": 2,
-      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "image": "/assets/img/product.png",
+      "title": "iPhone 13 Pro Max 256GB",
       "category": "Celulares",
-      "note": 5.0,
-      "price": "R$1.025,10",
-      "original_price": "R$2.100,83",
-      "description": "e frete grátis na sua primeira compra"
+      "note": 4.8,
+      "price": "R$7.499,00",
+      "original_price": "R$8.499,00",
+      "description": "Desempenho avançado com câmeras profissionais"
     },
     {
       "id": 3,
-      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "image": "/assets/img/product.png",
+      "title": "Xiaomi Redmi Note 11",
       "category": "Celulares",
-      "note": 5.0,
-      "price": "R$1.025,10",
-      "original_price": "R$2.100,83",
-      "description": "e frete grátis na sua primeira compra"
+      "note": 4.6,
+      "price": "R$1.399,00",
+      "original_price": "R$1.699,00",
+      "description": "Bateria de longa duração e ótimo custo-benefício"
     },
     {
       "id": 4,
-      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "image": "/assets/img/product.png",
+      "title": "Motorola Moto G60",
       "category": "Celulares",
-      "note": 5.0,
-      "price": "R$1.025,10",
-      "original_price": "R$2.100,83",
-      "description": "e frete grátis na sua primeira compra"
+      "note": 4.5,
+      "price": "R$1.249,99",
+      "original_price": "R$1.599,99",
+      "description": "Tela grande e excelente câmera para fotos e vídeos"
     },
     {
       "id": 5,
-      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "image": "/assets/img/product.png",
+      "title": "Realme 8 Pro 128GB",
       "category": "Celulares",
-      "note": 5.0,
-      "price": "R$1.025,10",
-      "original_price": "R$2.100,83",
-      "description": "e frete grátis na sua primeira compra"
+      "note": 4.4,
+      "price": "R$1.599,90",
+      "original_price": "R$2.099,90",
+      "description": "Desempenho robusto com design moderno"
     },
     {
       "id": 6,
-      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "image": "/assets/img/product.png",
+      "title": "Samsung Galaxy S21 Ultra",
       "category": "Celulares",
-      "note": 5.0,
-      "price": "R$1.025,10",
-      "original_price": "R$2.100,83",
-      "description": "e frete grátis na sua primeira compra"
+      "note": 4.9,
+      "price": "R$6.999,00",
+      "original_price": "R$7.499,00",
+      "description": "Poder de processamento e câmera excepcional"
     },
     {
       "id": 7,
-      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "image": "/assets/img/product.png",
+      "title": "Asus Zenfone 8",
       "category": "Celulares",
-      "note": 5.0,
-      "price": "R$1.025,10",
-      "original_price": "R$2.100,83",
-      "description": "e frete grátis na sua primeira compra"
+      "note": 4.7,
+      "price": "R$3.200,00",
+      "original_price": "R$3.899,00",
+      "description": "Compacto e potente, ideal para quem busca agilidade"
     },
     {
       "id": 8,
-      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "image": "/assets/img/product.png",
+      "title": "OnePlus 9 Pro 5G",
       "category": "Celulares",
-      "note": 5.0,
-      "price": "R$1.025,10",
-      "original_price": "R$2.100,83",
-      "description": "e frete grátis na sua primeira compra"
+      "note": 4.8,
+      "price": "R$4.799,00",
+      "original_price": "R$5.299,00",
+      "description": "Experiência premium com câmeras de alta qualidade"
     },
     {
       "id": 9,
-      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "image": "/assets/img/product.png",
+      "title": "Google Pixel 6",
       "category": "Celulares",
-      "note": 5.0,
-      "price": "R$1.025,10",
-      "original_price": "R$2.100,83",
-      "description": "e frete grátis na sua primeira compra"
+      "note": 4.9,
+      "price": "R$5.299,00",
+      "original_price": "R$5.999,00",
+      "description": "Tecnologia Google com câmera excepcional e software otimizado"
     },
     {
       "id": 10,
-      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "image": "/assets/img/product.png",
+      "title": "Samsung Galaxy A32 Dual SIM",
       "category": "Ofertas especiais",
-      "note": 5.0,
-      "price": "R$1.025,10",
-      "original_price": "R$2.100,83",
-      "description": "Ótimo celular Samsung Galaxy A15 com DUAL SIM, 5G e 128gb"
+      "note": 4.3,
+      "price": "R$1.499,00",
+      "original_price": "R$1.899,00",
+      "description": "Celular com ótima relação custo-benefício e tela AMOLED"
     },
     {
       "id": 11,
-      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "image": "/assets/img/product.png",
+      "title": "iPhone SE 2020",
       "category": "Ofertas especiais",
-      "note": 5.0,
-      "price": "R$1.025,10",
-      "original_price": "R$2.100,83",
-      "description": "Ótimo celular Samsung Galaxy A15 com DUAL SIM, 5G e 128gb"
+      "note": 4.5,
+      "price": "R$2.999,00",
+      "original_price": "R$3.499,00",
+      "description": "iPhone compacto com performance avançada"
     },
     {
       "id": 12,
-      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "image": "/assets/img/product.png",
+      "title": "Motorola Edge 20 Pro",
       "category": "Ofertas especiais",
-      "note": 5.0,
-      "price": "R$1.025,10",
-      "original_price": "R$2.100,83",
-      "description": "Ótimo celular Samsung Galaxy A15 com DUAL SIM, 5G e 128gb"
+      "note": 4.7,
+      "price": "R$3.399,00",
+      "original_price": "R$3.899,00",
+      "description": "Desempenho e tela de alta qualidade para jogos e vídeos"
     },
     {
       "id": 13,
-      "title": "Samsung Galaxy A15 Dual SIM 5G",
+      "image": "/assets/img/product.png",
+      "title": "Xiaomi Mi 11 Lite",
       "category": "Ofertas especiais",
-      "note": 5.0,
-      "price": "R$1.025,10",
-      "original_price": "R$2.100,83",
-      "description": "Ótimo celular Samsung Galaxy A15 com DUAL SIM, 5G e 128gb"
+      "note": 4.6,
+      "price": "R$2.199,00",
+      "original_price": "R$2.699,00",
+      "description": "Leve e elegante, com tela de 90Hz e boa performance"
     }
   ]
 }

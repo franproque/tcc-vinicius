@@ -9,9 +9,15 @@ $black-middle: rgba(0, 0, 0, 0.5);
 
 $blue-lighthen: rgba(248, 249, 250, 1);
 $blue-light: rgba(208, 231, 255, 1);
+$blue-clean: #007bff;
 $blue: #1d4a72;
 
 $gray-default: #333;
+$gray-100: #e7e7e7;
+$gray-200: rgba(0, 0, 0, 0.2);
+$gray-300: #212529;
+
+$green: #28a745;
 
 body {
   --first-menu-background-color: #{$first-menu-background-color};
@@ -25,9 +31,15 @@ body {
 
   --blue-lighthen: #{$blue-lighthen};
   --blue-light: #{$blue-light};
+  --blue-clean: #{$blue-clean};
   --blue: #{$blue};
 
   --gray-default: #{$gray-default};
+  --gray-100: #{$gray-100};
+  --gray-200: #{$gray-200};
+  --gray-300: #{$gray-300};
+
+  --green: #{$green};
 }
 
 body.dark-mode {
