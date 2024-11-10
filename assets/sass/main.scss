@@ -1,9 +1,15 @@
 @use "base/reset";
 @use "layouts/header";
+@use "layouts/footer";
 @use "pages/home";
+@use "pages/p-cart";
+@use "pages/checkout";
 @use "components/button";
 @use "components/card";
 @use "components/cart";
+@use "components/modal";
+@use "components/input";
 @use "modules/t-banner";
 @use "modules/s-category";
 @use "modules/l-products";
+@use "modules/c-payment";

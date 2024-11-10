@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <section class="header__navbar">
+      <nav class="wrapper" aria-label="Menu de navegação" role="navigation">
+        <ul class="header__navbar-items">
+          <li role="menuitem">
+            <span>1</span>
+            <a href="#logo-and-search" aria-label="Ir para a busca" role="link" accesskey="1">Ir para a busca</a>
+          </li>
+          <li role="menuitem">
+            <span>2</span>
+            <a href="#menu" aria-label="Ir para o menu" role="link" accesskey="2">Ir para o menu</a>
+          </li>
+
+          <li role="menuitem">
+            <span>3</span>
+            <a href="#footer" role="link" aria-label="Ir para o rodapé" accesskey="3">Ir para o rodapé</a>
+          </li>
+          <li role="menuitem">
+            <span>4</span>
+            <a href="" role="link" aria-label="Mapa do site" accesskey="4">Mapa do site</a>
+          </li>
+        </ul>
+        <div class="header__controls">
+          <button class="button-font-increment button-font">A+</button>
+          <button class="button-font-decrement button-font">A-</button>
+          <button class="button-dark-mode">
+            <img src="imgs/dark-mode.svg" alt="Ativar o modo escuro" />
+          </button>
+        </div>
+      </nav>
+    </section>
+
+    <section class="header__logo-and-search" id="logo-and-search">
+      <div class="wrapper">
+        <h1 role="heading" aria-level="1">
+          <a href="/" class="logo">LOGO SITE</a>
+        </h1>
+
+        <form class="form-search" method="get">
+          <input type="search" name="search" id="search" placeholder="Buscar" />
+          <button class="header__search-mic search-mic" type="button">
+            <img class="image active" src="imgs/microfone.svg" alt="Microfone de busca" role="img" />
+            <div class="speaking">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <button type="submit">Buscar</button>
+        </form>
+
+        <div class="header__profile">
+          <figure>
+            <img src="imgs/perfil.jpg" width="73" height="71" alt="Foto de perfil" role="img" />
+          </figure>
+          <div>
+            <h2 role="heading" aria-level="2">Olá, Vinicius Germano!</h2>
+            <p>Rua X, 2024. Jd. São Paulo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="header__menu" id="menu">
+      <div class="wrapper">
+        <nav role="navigation">
+          <ul class="header__menu-items">
+            <li><span>5</span> <a href="#top">Ínicio</a></li>
+            <li><span>6</span> <a href="">Anunciar</a></li>
+            <li><span>7</span> <a href="">Quero Comprar</a></li>
+            <li><span>8</span> <a href="">Minha Conta</a></li>
+            <li><span>S</span> <a href="">Suporte</a></li>
+          </ul>
+          <a href="/carrinho.html" class="header__cart cart">
+            <figure>
+              <img src="./assets/svg/cart.svg" />
+            </figure>
+            <span>R$0,00</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </header>
+
+  <main class="checkout">
+    <section class="c-payment">
+      <form class="c-payment__form wrapper">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+
+          <label class="field">
+            <span>Nome:</span>
+            <input type="text" name="" />
+          </label>
+
+          <label class="field">
+            <span>Email:</span>
+            <input type="email" name="" />
+          </label>
+
+          <label class="field">
+            <span>CPF:</span>
+            <input type="text" name="" />
+          </label>
+
+          <label class="field">
+            <span>Telefone</span>
+            <input type="text" name="" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Endereço</legend>
+          <label class="field">
+            <span>CEP</span>
+            <input type="text" name="" />
+          </label>
+
+          <label class="field">
+            <span>Número</span>
+            <input type="text" name="" />
+          </label>
+
+          <label class="field">
+            <span>Complemento</span>
+            <input type="text" name="" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Método de pagamento</legend>
+
+          <label class="field">
+            <span>Nome:</span>
+            <input type="text" name="" value="Vinicius" />
+          </label>
+
+          <label class="field">
+            <span>Número:</span>
+            <input type="text" name="" value="4111 1111 1111 1111" />
+          </label>
+
+          <label class="field">
+            <span>Mes de expiração</span>
+            <input type="text" name="" value="08" />
+          </label>
+
+          <label class="field">
+            <span>Ano de expiração</span>
+            <input type="text" name="" value="30" />
+          </label>
+
+          <label class="field">
+            <span>CVV</span>
+            <input type="text" name="" value="123" />
+          </label>
+        </fieldset>
+
+        <button type="submit" class="button" role="button">Concluir</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <section class="footer__with-logo wrapper">
+      <figure><a href="/" class="logo">LOGO SITE</a></figure>
+      <article>
+        <h3>Acessei.com</h3>
+        <p>Marketplace acessível a todos</p>
+      </article>
+    </section>
+    <section class="footer__content wrapper">
+      <p>
+        Acessei.com é um marketplace para todos! Queremos promover um site
+        onde seja possível pessoas com deficiências sensoriais usem os
+        recursos disponíveis no site como compra e venda.
+      </p>
+    </section>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="assets/js/libs/shortcut.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget("https://vlibras.gov.br/app");
+  </script>
+</body>
+
+</html>

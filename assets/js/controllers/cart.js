@@ -17,6 +17,7 @@ export default class Cart {
   }
 
   execute() {
+    if ((!this.cart.length ?? 0 > 0) && this.actionTags.containerBuyCart) this.actionTags.containerBuyCart.removeChild(this.actionTags.buyCart)
     const addToCartButtons = Array.from(document.querySelectorAll('.add-to-cart'))
     const path = window.location.pathname
 
@@ -28,21 +29,12 @@ export default class Cart {
     addToCartButtons.map(btn => {
       btn.addEventListener('click', () => {
         const productId = btn.closest('article').getAttribute('data-id')
+        this.actionTags.soundCart.play()
 
         if (path.includes('carrinho')) {
           const thisCart = this.removeToCart(this.products.find(el => el.id == productId).id)
 
-          const paginateCart = Array.from(
-            { length: Math.ceil(thisCart.length / 6) },
-            (v, i) => thisCart.slice(i * 6, i * 6 + 6))
-
-          this.instanceProducts.products = paginateCart
-
-          this.instanceProducts.render()
-
-          this.instanceProducts.pagination()
-
-          this.execute()
+          this.refreshPresentation(thisCart)
         } else {
           this.addToCart(this.products.find(el => el.id == productId))
         }
@@ -54,18 +46,37 @@ export default class Cart {
       })
     })
 
+    if (path.includes('carrinho')) {
+      this.actionTags.cleanCart.addEventListener('click', () => {
+        const thisCart = this.emptyCart()
 
+        this.refreshPresentation(thisCart)
+      })
 
+      this.actionTags.buyCart.addEventListener('click', () => {
+        if (this.cart.length ?? 0 > 0) window.location.href = '/checkout.html'
+      })
+    }
   }
 
-  getTotal(cart) {
+  refreshPresentation(thisCart) {
+    const paginateCart = Array.from(
+      { length: Math.ceil(thisCart.length / 6) },
+      (v, i) => thisCart.slice(i * 6, i * 6 + 6))
+
+    this.instanceProducts.products = paginateCart
+
+    this.instanceProducts.render()
+
+    this.instanceProducts.pagination()
+
+    this.execute()
+  }
+
+  getTotal(cart = this.cart) {
     return cart.reduce((acc, cur) => {
       return acc + normalizePrice(cur.price) * cur.quantity
     }, 0)
-  }
-
-  buyCart() {
-
   }
 
   addToCart(item) {

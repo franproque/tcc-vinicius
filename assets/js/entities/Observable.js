@@ -6,14 +6,10 @@ export default class Observable {
   }
 
   register(observer) {
-    console.log(observer.event);
-
     this.observers.push(observer)
   }
 
   notify(event) {
-    console.log('oi', this.observers);
-
     for (const observer of this.observers) {
       if (observer.event === event) {
         observer.callback()

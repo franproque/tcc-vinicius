@@ -47,7 +47,7 @@
 
     <section class="header__logo-and-search" id="logo-and-search">
       <div class="wrapper">
-        <h1 role="heading" aria-level="1"><a href="#" class="logo">LOGO SITE</a></h1>
+        <h1 role="heading" aria-level="1"><a href="/" class="logo">LOGO SITE</a></h1>
 
         <form class="form-search" method="get">
           <input type="search" name="search" id="search" placeholder="Buscar">
@@ -87,23 +87,55 @@
             <li><span>8</span> <a href="">Minha Conta</a></li>
             <li><span>S</span> <a href="">Suporte</a></li>
           </ul>
-          <div class="header__cart cart">
+          <a href="/carrinho.html" class="header__cart cart">
             <figure>
               <img src="./assets/svg/cart.svg" />
             </figure>
             <span>R$0,00</span>
-          </div>
+          </a>
         </nav>
       </div>
     </section>
   </header>
 
-  <main>
+  <main class="p-cart">
     <section class="l-products">
-      <div class="l-products__cards wrapper"></div>
+      <div class="l-products__buttons wrapper" role="grid">
+        <div>
+          <button class="button buy-cart">
+            Finalizar Compra
+          </button>
+        </div>
+        <div></div>
+        <div>
+          <button class="button button--inline clean-cart">
+            <picture><img src="/assets/svg/clear.svg" alt="Borracha" role="img" /></picture> <span>Limpar
+              Carrinho</span>
+          </button>
+        </div>
+      </div>
+      <div class="l-products__cards wrapper" role="grid"></div>
       <div class="l-products__pagination wrapper"></div>
     </section>
   </main>
+
+  <footer class="footer" id="footer">
+    <section class="footer__with-logo wrapper">
+      <figure><a href="/" class="logo">LOGO SITE</a></figure>
+      <article>
+        <h3>Acessei.com</h3>
+        <p>Marketplace acessível a todos</p>
+      </article>
+    </section>
+    <section class="footer__content wrapper">
+      <p>Acessei.com é um marketplace para todos! Queremos promover um site onde seja possível pessoas com deficiências
+        sensoriais usem os recursos disponíveis no site como compra e venda.</p>
+    </section>
+  </footer>
+
+  <audio class="sound-cart">
+    <source src="/assets/mp3/add-cart.mp3" type="audio/mp3">
+  </audio>
 
   <div vw class="enabled">
     <div vw-access-button class="active"></div>

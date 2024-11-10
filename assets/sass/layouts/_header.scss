@@ -2,6 +2,9 @@
 
 .header {
   width: 100%;
+  position: sticky;
+  top: -9.5rem;
+  z-index: 999;
 
   &__navbar {
     background-color: var(--first-menu-background-color);
@@ -184,6 +187,11 @@
         flex: 1;
       }
 
+      input[type="search"]::-webkit-search-decoration:hover,
+      input[type="search"]::-webkit-search-cancel-button:hover {
+        cursor: pointer;
+      }
+
       & button[type="submit"] {
         background-color: var(--blue-light);
         color: var(--blue);
@@ -286,7 +294,11 @@
   }
 
   &__menu {
-    margin: clamp(2.4rem, 2.6cqi, 2.6rem) 0;
+    background-color: var(--white);
+
+    & div.wrapper {
+      padding: clamp(2.4rem, 2.6cqi, 2.6rem) 0;
+    }
 
     & nav {
       display: flex;

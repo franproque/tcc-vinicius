@@ -1,5 +1,5 @@
 import { observer } from '../entities/Observable.js'
-import { normalizePrice } from '../utils/helpers.js'
+import { formatPagination, normalizePrice } from '../utils/helpers.js'
 
 export default class Products {
   products
@@ -8,10 +8,7 @@ export default class Products {
   paged
 
   constructor(products, actionTags) {
-    this.products = Array.from(
-      { length: Math.ceil(products.length / 6) },
-      (v, i) => products.slice(i * 6, i * 6 + 6)
-    )
+    this.products = formatPagination(products)
     this.actionTags = actionTags
     this.pages = this.products.length ?? 0
     this.paged = 0
@@ -20,6 +17,7 @@ export default class Products {
   execute() {
     this.render()
     this.pagination()
+    this.search()
   }
 
   pagination() {
@@ -121,6 +119,7 @@ export default class Products {
     card.append(cardContainerImage, cardContainerCatagoryAndNote, cardTitle, cardContainerPriceAndPromotion, cardDescription, cardContainerCart)
     card.classList.add('card')
     card.setAttribute('data-id', product.id)
+    card.title = product.title
 
     return card
   }
@@ -173,6 +172,7 @@ export default class Products {
 
   render(paged = 0, products = this.products) {
     this.actionTags.containerProducts.innerHTML = ''
+    const path = window.location.pathname
 
     products[paged]?.length ?? 0 > 0 ? products[paged].forEach((product, index) => {
       const node = this.mount(product)
@@ -192,11 +192,33 @@ export default class Products {
     if (!products[paged]?.length ?? 0 > 0) {
       const heading = document.createElement('h2')
 
-      heading.textContent = 'Carrinho Vazio'
+      heading.textContent = path.includes('carrinho') ? 'Carrinho Vazio' : 'Sem resultados'
 
       this.actionTags.containerProducts.appendChild(heading)
     }
 
     this.pages = products.length
+  }
+
+  search() {
+    const originalProducts = this.products
+    this.actionTags.formSearch.addEventListener('submit', (ev) => {
+      ev.preventDefault();
+
+      const value = ev.target.querySelector('input').value
+
+      if (value.length ?? 0 > 0) {
+        const filteredProducts = originalProducts.flat(1).filter((product) => {
+          return product.title.toLowerCase().includes(value.toLowerCase()) || product.description.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase().includes(value.toLowerCase()) || product.category.toLowerCase().includes(value.toLowerCase())
+        })
+
+        this.products = formatPagination(filteredProducts)
+      } else {
+        this.products = originalProducts
+      }
+
+      this.render()
+      this.pagination()
+    })
   }
 }

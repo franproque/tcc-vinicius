@@ -19,8 +19,18 @@ export default class ActionTags {
     this.menuCategory = document.querySelectorAll('.s-category ul li')
     this.containerProducts = document.querySelector('.l-products__cards')
     this.containerPagination = document.querySelector('.l-products__pagination')
+    this.containerButtons = document.querySelector('.l-products__buttons')
 
     this.containerCart = document.querySelector('.header__cart span')
+    this.cleanCart = document.querySelector('.clean-cart')
+
+    this.containerBuyCart = document.querySelector('.l-products__buttons div:first-of-type')
+    this.buyCart = document.querySelector('.buy-cart')
+
+    this.soundCart = document.querySelector('.sound-cart')
+
+    this.sendCheckout = document.querySelector('.c-payment__form')
+    this.formSearch = document.querySelector('.form-search')
 
   }
 }

@@ -1,0 +1,29 @@
+.c-payment {
+  container-type: inline-size;
+
+  & form {
+    display: flex;
+    flex-flow: column;
+  }
+
+  & fieldset {
+    margin-bottom: clamp(2rem, 3.5cqi, 3.5rem);
+    padding: clamp(1.5rem, 3cqi, 3rem);
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: column;
+    gap: 1.5rem;
+
+    & legend {
+      font-size: clamp(2.4rem, 2.8cqi, 2.8rem);
+      line-height: clamp(3rem, 3.5cqi, 3.5rem);
+      font-weight: 500;
+      text-align: left;
+      padding: 1.5rem 1.5rem 0;
+    }
+  }
+
+  & button {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,33 @@
+.button {
+  background-color: var(--blue-light);
+  border-radius: 50rem;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  transition: all 0.2s ease-in-out;
+  color: var(--blue);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 2cqi, 2rem);
+
+  &:hover {
+    scale: 0.95;
+    opacity: 0.7;
+  }
+
+  &--inline {
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    align-items: flex-start;
+
+    & span {
+      font-weight: 600;
+      color: var(--blue-clean);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+}

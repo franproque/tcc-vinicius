@@ -1,0 +1,51 @@
+.footer {
+  background-color: var(--gray-300);
+  color: var(--white);
+  container-type: inline-size;
+  padding: clamp(2rem, 2.5cqi, 2.5rem) 0 clamp(3rem, 4cqi, 4rem);
+
+  & section > * {
+    max-width: 51.2rem;
+  }
+
+  &__with-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    & figure {
+      display: flex;
+      align-items: center;
+      padding: 3.4rem 4.15rem;
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: 3.5rem;
+      border-radius: 3rem;
+      text-decoration: none;
+      border: 1px solid var(--black);
+      color: var(--black);
+      background-color: var(--white);
+    }
+
+    & h3 {
+      font-size: clamp(2.4rem, 2.8cqi, 2.8rem);
+      line-height: clamp(3rem, 3.5cqi, 3.5rem);
+      font-weight: 600;
+    }
+
+    & p {
+      font-size: clamp(1.6rem, 2cqi, 2rem);
+      line-height: clamp(3rem, 3.5cqi, 3.5rem);
+      font-weight: 400;
+    }
+  }
+
+  &__content {
+    & p {
+      font-size: clamp(1.6rem, 2cqi, 2rem);
+      line-height: clamp(3rem, 3.5cqi, 3.5rem);
+      font-weight: 600;
+    }
+  }
+}

@@ -10,6 +10,7 @@ import listProducts from '../json/cards.json' with { type: "json" };
 import Cart from './controllers/cart.js';
 import { observer } from './entities/Observable.js';
 import Observer from './entities/Observer.js';
+import Checkout from './controllers/checkout.js';
 
 window.addEventListener('DOMContentLoaded', function () {
   // Constants
@@ -29,14 +30,23 @@ window.addEventListener('DOMContentLoaded', function () {
   const categories = new Categories(searchParams, actionTags)
   const products = new Products(path.includes('carrinho') ? parseJSONCart : listProducts.cards, actionTags)
   const cart = new Cart(actionTags, listProducts.cards, parseJSONCart, products)
+  const checkout = new Checkout(actionTags, cart)
 
   fontSize.execute()
   contrast.execute()
   shortcut.execute()
   voice.execute()
   categories.execute()
-  products.execute()
+
+  if (actionTags.containerProducts) {
+    products.execute()
+  }
+
   cart.execute()
+
+  if (actionTags.sendCheckout) {
+    checkout.execute()
+  }
 
   observer.register(new Observer('refreshCart', () => {
     cart.execute()
