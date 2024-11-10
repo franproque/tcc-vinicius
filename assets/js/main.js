@@ -15,6 +15,7 @@ import Checkout from './controllers/checkout.js';
 window.addEventListener('DOMContentLoaded', function () {
   // Constants
   const localStorageFont = localStorage.getItem('font-size')
+  const localStorageContrast = localStorage.getItem('tcc-contrast')
   const localStorageCart = localStorage.getItem('tcc-products-cart')
   const parseJSONCart = JSON.parse(localStorageCart)
 
@@ -24,7 +25,7 @@ window.addEventListener('DOMContentLoaded', function () {
   const searchParams = new URLSearchParams(window.location.search)
   const actionTags = new ActionTags()
   const fontSize = new FontSize(localStorageFont, actionTags)
-  const contrast = new Contrast()
+  const contrast = new Contrast(localStorageContrast)
   const voice = new Voice(actionTags, spoken)
   const shortcut = new ShortCut(actionTags)
   const categories = new Categories(searchParams, actionTags)

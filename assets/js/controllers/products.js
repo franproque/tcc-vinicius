@@ -55,6 +55,7 @@ export default class Products {
 
     buttonPagination.textContent = index + 1
     buttonPagination.type = 'button'
+    buttonPagination.ariaLabel = 'Página' + (index + 1)
 
     return buttonPagination
   }
@@ -87,16 +88,20 @@ export default class Products {
 
     cardCategory.textContent = product.category
     cardNote.textContent = product.note.toFixed(1)
+    cardNote.ariaLabel = 'Nota' + product.note.toFixed(1)
 
     cardContainerCatagoryAndNote.append(cardCategory, cardNote)
     cardContainerCatagoryAndNote.classList.add('card__category-and-note')
 
     cardCurrentPrice.textContent = product.price
+    cardCurrentPrice.ariaLabel = 'Preço Atual ' + product.price
     cardPrice.textContent = product.original_price
+    cardPrice.ariaLabel = 'Preço Original ' + product.original_price
 
     cardPriceAndCurrentPrice.append(cardCurrentPrice, cardPrice)
 
     cardPromotion.textContent = (((normalizePrice(product.original_price) - normalizePrice(product.price)) / normalizePrice(product.original_price)) * 100).toFixed(0) + '% OFF'
+    cardPromotion.ariaLabel = "Desconto de " + (((normalizePrice(product.original_price) - normalizePrice(product.price)) / normalizePrice(product.original_price)) * 100).toFixed(0) + 'porcento'
 
     cardContainerPriceAndPromotion.append(cardPriceAndCurrentPrice, cardPromotion)
     cardContainerPriceAndPromotion.classList.add('card__price-and-promotion')

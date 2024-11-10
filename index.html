@@ -31,14 +31,14 @@
               rodapé</a>
           </li>
           <li role="menuitem">
-            <span>4</span> <a href="" role="link" aria-label="Mapa do site" accesskey="4">Mapa do site</a>
+            <span>4</span> <a href="/index.html" role="link" aria-label="Mapa do site" accesskey="4">Mapa do site</a>
           </li>
         </ul>
         <div class="header__controls">
-          <button class="button-font-increment button-font">A+</button>
-          <button class="button-font-decrement button-font">A-</button>
+          <button class="button-font-increment button-font" aria-label="Aumentar fonte">A+</button>
+          <button class="button-font-decrement button-font" aria-label="Diminuir fonte">A-</button>
           <button class="button-dark-mode">
-            <img src="imgs/dark-mode.svg" alt="Ativar o modo escuro">
+            <img src="imgs/dark-mode.svg" alt="Ativar/Desativar o modo escuro">
           </button>
         </div>
       </nav>
@@ -81,8 +81,8 @@
         <nav role="navigation">
           <ul class="header__menu-items">
             <li><span>5</span> <a href="#top">Ínicio</a></li>
-            <li><span>6</span> <a href="">Anunciar</a></li>
-            <li><span>7</span> <a href="">Quero Comprar</a></li>
+            <li><span>6</span> <a href="#advertise">Anunciar</a></li>
+            <li><span>7</span> <a href="#w-buy">Quero Comprar</a></li>
             <li><span>8</span> <a href="">Minha Conta</a></li>
             <li><span>S</span> <a href="">Suporte</a></li>
           </ul>
@@ -192,7 +192,7 @@
       <div class="l-products__cards wrapper"></div>
       <div class="l-products__pagination wrapper"></div>
     </section>
-    <section class="w-buy">
+    <section class="w-buy" id="w-buy">
       <div class="wrapper">
         <h2>Deseja que um profissional compre para você?</h2>
 
@@ -216,7 +216,7 @@
         </form>
       </div>
     </section>
-    <section class="advertise">
+    <section class="advertise" id="advertise">
       <h2>ANUNCIE em <span>poucos cliques</span></h2>
       <p>Você pode anunciar seu produto preenchendo os dados abaixo ou solicitar ajuda especializada para realizar o
         anúncio</p>

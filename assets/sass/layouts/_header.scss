@@ -294,7 +294,7 @@
   }
 
   &__menu {
-    background-color: var(--white);
+    background-color: var(--bg-white);
 
     & div.wrapper {
       padding: clamp(2.4rem, 2.6cqi, 2.6rem) 0;
@@ -324,7 +324,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: var(--blue);
+      background-color: var(--bg-blue);
     }
 
     & a {

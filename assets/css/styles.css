@@ -3,12 +3,14 @@ body {
   --first-menu-font-color: #f8f9fa;
   --white: #fff;
   --white-100: #f0f0f0;
+  --bg-white: #fff;
   --black: #000;
   --black-middle: rgba(0, 0, 0, 0.5);
   --blue-lighthen: rgb(248, 249, 250);
   --blue-light: rgb(208, 231, 255);
   --blue-clean: #007bff;
   --blue: #1d4a72;
+  --bg-blue: #1d4a72;
   --gray-default: #333;
   --gray-100: #e7e7e7;
   --gray-200: rgba(0, 0, 0, 0.2);
@@ -17,8 +19,17 @@ body {
 }
 
 body.dark-mode {
-  --first-menu-background-color: red;
+  --first-menu-background-color: #1c1e1f;
   --first-menu-font-color: white;
+  --white: white;
+  --white-100: #202325;
+  --bg-white: #181a1b;
+  --blue: rgba(208, 231, 255, 1);
+  --bg-blue: #1d4a72;
+  --blue-light: #25282a;
+  --blue-lighthen: #1b1e1f;
+  --black: #e8e6e3;
+  --black-middle: rgba(140, 130, 115, 0.5);
 }
 
 *,
@@ -378,7 +389,7 @@ a:hover {
   object-fit: cover;
 }
 .header__menu {
-  background-color: var(--white);
+  background-color: var(--bg-white);
 }
 .header__menu div.wrapper {
   padding: clamp(2.4rem, 2.6cqi, 2.6rem) 0;
@@ -404,7 +415,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--blue);
+  background-color: var(--bg-blue);
 }
 .header__menu-items a {
   color: var(--black);
@@ -444,7 +455,7 @@ a:hover {
   text-decoration: none;
   border: 1px solid var(--black);
   color: var(--black);
-  background-color: var(--white);
+  background-color: var(--bg-white);
 }
 .footer__with-logo h3 {
   font-size: clamp(2.4rem, 2.8cqi, 2.8rem);
@@ -471,7 +482,7 @@ a:hover {
 }
 
 .checkout {
-  margin-bottom: clamp(4rem, 7vw, 7rem);
+  margin: clamp(4rem, 7vw, 7rem) 0;
 }
 
 .button {
@@ -601,7 +612,7 @@ a:hover {
   transition: all 0.2s ease-in-out;
 }
 .cart figure {
-  background-color: var(--white);
+  background-color: var(--bg-white);
   border-radius: 50%;
   padding: 0.5rem;
   width: 4rem;
@@ -637,7 +648,7 @@ a:hover {
   border: none;
 }
 .checkout-modal__wrapper {
-  background-color: var(--white);
+  background-color: var(--bg-white);
   position: relative;
   border-radius: 2rem;
   border: 1px solid var(--blue);
@@ -686,7 +697,7 @@ a:hover {
 }
 
 .t-banner {
-  background-color: var(--blue);
+  background-color: var(--bg-blue);
   color: var(--white);
   padding: clamp(4rem, 6vw, 6rem);
   container-type: inline-size;
@@ -876,7 +887,7 @@ a:hover {
   transition: all 0.2s ease-in-out;
 }
 .l-products__pagination button.active {
-  background-color: var(--blue);
+  background-color: var(--bg-blue);
   color: var(--white);
   transition: all 0.2s ease-in-out;
 }
@@ -908,7 +919,7 @@ a:hover {
 }
 
 .w-buy {
-  background-color: var(--blue);
+  background-color: var(--bg-blue);
   color: var(--white);
   padding: clamp(3.5rem, 6vw, 6rem);
   container-type: inline-size;
