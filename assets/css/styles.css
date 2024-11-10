@@ -907,4 +907,87 @@ a:hover {
   margin-left: auto;
 }
 
+.w-buy {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: clamp(3.5rem, 6vw, 6rem);
+  container-type: inline-size;
+  margin: clamp(3rem, 5cqi, 5rem) 0;
+}
+.w-buy h2 {
+  font-size: clamp(3.4rem, 3.8cqi, 3.8rem);
+  line-height: clamp(3rem, 3.5cqi, 3.5rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: clamp(3rem, 5cqi, 5rem);
+}
+.w-buy p {
+  font-size: clamp(2.4rem, 2.8cqi, 2.8rem);
+  line-height: clamp(3rem, 3.5cqi, 3.5rem);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: clamp(3rem, 5cqi, 5rem);
+}
+.w-buy form {
+  display: flex;
+  gap: 2rem;
+}
+.w-buy form label {
+  flex: 1;
+}
+
+.advertise h2 {
+  font-size: clamp(2.4rem, 2.8cqi, 2.8rem);
+  line-height: clamp(3rem, 3.5cqi, 3.5rem);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.advertise h2::before, .advertise h2::after {
+  content: "";
+  flex: 1;
+  display: block;
+  background-color: var(--black);
+  height: 1px;
+  width: 100%;
+}
+.advertise h2::after {
+  right: 0;
+  margin-left: 3rem;
+}
+.advertise h2::before {
+  left: 0;
+  margin-right: 3rem;
+}
+.advertise h2 span {
+  color: var(--blue-clean);
+}
+.advertise p {
+  font-size: clamp(1.6rem, 2cqi, 2rem);
+  line-height: clamp(3rem, 3.5cqi, 3.5rem);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: clamp(2rem, 2.5cqi, 2.5rem);
+}
+.advertise button {
+  margin: 0 auto;
+}
+.advertise form {
+  display: flex;
+  gap: 2rem;
+  margin-top: clamp(2rem, 3cqi, 3rem);
+  flex-flow: row wrap;
+}
+.advertise form label {
+  width: calc(25% - 1.5rem);
+}
+.advertise form button {
+  margin: 0;
+  margin-left: auto;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -14,10 +14,16 @@ export default class Voice {
       if (availableForSpeak) {
         this.toggleSearchSpeak(this.actionTags.searchSpeaking, this.actionTags.searchImage, 'open')
 
-        setTimeout(() => this.toggleSearchSpeak(this.actionTags.searchSpeaking, this.actionTags.searchImage, 'close'), 7000)
+        setTimeout(() => this.toggleSearchSpeak(this.actionTags.searchSpeaking, this.actionTags.searchImage, 'close'), 10000)
 
-        let transcript = await this.spoken.listen().then(ts => ts)
-          .catch(e => console.warn(e.message))
+        let transcript;
+
+        await this.spoken.say('Fale o que deseja pesquisar').then(async () => {
+          await this.spoken.listen().then(ts => {
+            transcript = ts
+          })
+            .catch(e => console.warn(e.message))
+        })
 
         if (transcript) {
           this.actionTags.searchInput.value = transcript
