@@ -1,5 +1,5 @@
 .button {
-  background-color: var(--blue-light);
+  background-color: var(--bg-blue-light);
   border-radius: 50rem;
   width: max-content;
   display: flex;
@@ -11,6 +11,7 @@
   color: var(--blue);
   font-weight: 700;
   font-size: clamp(1.6rem, 2cqi, 2rem);
+  border: 1px solid var(--border);
 
   &:hover {
     scale: 0.95;
@@ -22,6 +23,7 @@
     border-radius: 0;
     padding: 0;
     align-items: flex-start;
+    border: none;
 
     & span {
       font-weight: 600;

@@ -2,12 +2,14 @@ body {
   --first-menu-background-color: #212529;
   --first-menu-font-color: #f8f9fa;
   --white: #fff;
+  --txt-white: #fff;
   --white-100: #f0f0f0;
   --bg-white: #fff;
   --black: #000;
   --black-middle: rgba(0, 0, 0, 0.5);
   --blue-lighthen: rgb(248, 249, 250);
   --blue-light: rgb(208, 231, 255);
+  --bg-blue-light: rgb(208, 231, 255);
   --blue-clean: #007bff;
   --blue: #1d4a72;
   --bg-blue: #1d4a72;
@@ -15,21 +17,32 @@ body {
   --gray-100: #e7e7e7;
   --gray-200: rgba(0, 0, 0, 0.2);
   --gray-300: #212529;
+  --bg-footer: #212529;
   --green: #28a745;
+  --border: transparent;
 }
 
 body.dark-mode {
-  --first-menu-background-color: #1c1e1f;
+  --first-menu-background-color: #000;
   --first-menu-font-color: white;
-  --white: white;
-  --white-100: #202325;
-  --bg-white: #181a1b;
-  --blue: rgba(208, 231, 255, 1);
-  --bg-blue: #1d4a72;
+  --white: #fff;
+  --txt-white: #000;
+  --white-100: #000;
+  --bg-white: #000;
+  --blue: #fff;
+  --bg-blue: #000;
   --blue-light: #25282a;
+  --bg-blue-light: #000;
   --blue-lighthen: #1b1e1f;
-  --black: #e8e6e3;
+  --black: #fff;
   --black-middle: rgba(140, 130, 115, 0.5);
+  --gray-100: #000;
+  --gray-300: #fff;
+  --bg-footer: #000;
+  --border: #fff;
+}
+body.dark-mode .l-products__pagination {
+  --bg-blue: #fff;
 }
 
 *,
@@ -50,6 +63,7 @@ body {
   position: relative;
   scroll-behavior: smooth;
   font-family: "Inter", sans-serif;
+  background-color: var(--bg-white);
 }
 
 main {
@@ -282,7 +296,7 @@ a:hover {
   align-items: center;
   border-radius: 2rem;
   border: 1.5px solid var(--black-middle);
-  background-color: var(--blue-lighthen);
+  background-color: var(--bg-blue-lighthen);
   border: 1.5px solid var(--black-middle);
   padding: 0.9rem;
   height: 6.5rem;
@@ -299,13 +313,14 @@ a:hover {
   background-color: transparent;
   outline: none;
   flex: 1;
+  color: var(--black);
 }
 .header__logo-and-search .form-search input[type=search]::-webkit-search-decoration:hover,
 .header__logo-and-search .form-search input[type=search]::-webkit-search-cancel-button:hover {
   cursor: pointer;
 }
 .header__logo-and-search .form-search button[type=submit] {
-  background-color: var(--blue-light);
+  background-color: var(--bg-blue-light);
   color: var(--blue);
   border: none;
   font-weight: 700;
@@ -316,6 +331,7 @@ a:hover {
   width: 8.9rem;
   height: 4.5rem;
   cursor: pointer;
+  border: 1px solid var(--border);
 }
 .header__search-mic {
   width: 4rem;
@@ -407,7 +423,7 @@ a:hover {
   display: flex;
 }
 .header__menu-items span {
-  color: var(--white);
+  color: var(--txt-white);
   font-weight: 500;
   font-size: clamp(1.6rem, 2cqi, 2rem);
   min-width: 3.5rem;
@@ -415,7 +431,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-blue);
+  background-color: var(--blue);
 }
 .header__menu-items a {
   color: var(--black);
@@ -430,7 +446,7 @@ a:hover {
 }
 
 .footer {
-  background-color: var(--gray-300);
+  background-color: var(--bg-footer);
   color: var(--white);
   container-type: inline-size;
   padding: clamp(2rem, 2.5cqi, 2.5rem) 0 clamp(3rem, 4cqi, 4rem);
@@ -486,7 +502,7 @@ a:hover {
 }
 
 .button {
-  background-color: var(--blue-light);
+  background-color: var(--bg-blue-light);
   border-radius: 50rem;
   width: max-content;
   display: flex;
@@ -498,6 +514,7 @@ a:hover {
   color: var(--blue);
   font-weight: 700;
   font-size: clamp(1.6rem, 2cqi, 2rem);
+  border: 1px solid var(--border);
 }
 .button:hover {
   scale: 0.95;
@@ -508,6 +525,7 @@ a:hover {
   border-radius: 0;
   padding: 0;
   align-items: flex-start;
+  border: none;
 }
 .button--inline span {
   font-weight: 600;
@@ -560,6 +578,7 @@ a:hover {
   line-height: clamp(3rem, 3.5cqi, 3.5rem);
   font-weight: 600;
   text-align: center;
+  color: var(--black);
 }
 .card__price-and-promotion h4 span:last-of-type {
   font-size: clamp(1.6rem, 2cqi, 2rem);
@@ -578,15 +597,17 @@ a:hover {
   font-size: clamp(1.6rem, 2cqi, 2rem);
   line-height: clamp(3rem, 3.5cqi, 3.5rem);
   font-weight: 700;
+  color: var(--black);
 }
 .card p {
   font-size: clamp(1.6rem, 2cqi, 2rem);
   line-height: 1;
   font-weight: 400;
   margin-bottom: 1.8rem;
+  color: var(--black);
 }
 .card figure {
-  background-color: var(--blue-light);
+  background-color: var(--bg-blue-light);
   border-radius: 1rem;
   display: flex;
   justify-content: center;
@@ -601,7 +622,7 @@ a:hover {
 }
 
 .cart {
-  background-color: var(--blue-light);
+  background-color: var(--bg-blue-light);
   border-radius: 50rem;
   width: max-content;
   display: flex;
@@ -610,6 +631,7 @@ a:hover {
   gap: 1rem;
   padding: 1rem;
   transition: all 0.2s ease-in-out;
+  border: 1px solid var(--border);
 }
 .cart figure {
   background-color: var(--bg-white);
@@ -620,6 +642,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--border);
 }
 .cart span {
   color: var(--blue);
@@ -747,6 +770,7 @@ a:hover {
 .s-category {
   container-type: inline-size;
   padding: clamp(3.5rem, 4vw, 4rem) 0;
+  background-color: var(--bg-white);
 }
 .s-category h2 {
   font-size: clamp(2.4rem, 2.8cqi, 2.8rem);
@@ -758,6 +782,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  color: var(--black);
 }
 .s-category h2::before, .s-category h2::after {
   content: "";
@@ -784,12 +809,14 @@ a:hover {
   font-weight: 700;
   text-align: center;
   margin-bottom: 1rem;
+  color: var(--black);
 }
 .s-category p {
   font-size: clamp(1.6rem, 2cqi, 2rem);
   line-height: clamp(3rem, 3.5cqi, 3.5rem);
   font-weight: 400;
   text-align: center;
+  color: var(--black);
 }
 .s-category nav {
   background-color: var(--gray-100);
@@ -820,6 +847,7 @@ a:hover {
   line-height: clamp(3rem, 3.5cqi, 3.5rem);
   font-weight: 400;
   transition: all 0.2s ease-in-out;
+  color: var(--black);
 }
 .s-category ul button.active {
   color: var(--blue-clean);
@@ -832,6 +860,7 @@ a:hover {
 
 .l-products {
   container-type: inline-size;
+  background-color: var(--bg-white);
 }
 .l-products h2 {
   font-size: clamp(3.4rem, 3.8cqi, 3.8rem);
@@ -885,10 +914,11 @@ a:hover {
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
+  color: var(--black);
 }
 .l-products__pagination button.active {
   background-color: var(--bg-blue);
-  color: var(--white);
+  color: var(--txt-white);
   transition: all 0.2s ease-in-out;
 }
 
@@ -913,6 +943,10 @@ a:hover {
   font-weight: 500;
   text-align: left;
   padding: 1.5rem 1.5rem 0;
+  color: var(--black);
+}
+.c-payment fieldset label span {
+  color: var(--black);
 }
 .c-payment button {
   margin-left: auto;
@@ -957,6 +991,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  color: var(--black);
 }
 .advertise h2::before, .advertise h2::after {
   content: "";

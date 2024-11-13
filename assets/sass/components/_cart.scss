@@ -1,5 +1,5 @@
 .cart {
-  background-color: var(--blue-light);
+  background-color: var(--bg-blue-light);
   border-radius: 50rem;
   width: max-content;
   display: flex;
@@ -8,6 +8,8 @@
   gap: 1rem;
   padding: 1rem;
   transition: all 0.2s ease-in-out;
+
+  border: 1px solid var(--border);
 
   & figure {
     background-color: var(--bg-white);
@@ -18,6 +20,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    border: 1px solid var(--border);
   }
 
   & span {

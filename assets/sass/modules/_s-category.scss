@@ -1,6 +1,7 @@
 .s-category {
   container-type: inline-size;
   padding: clamp(3.5rem, 4vw, 4rem) 0;
+  background-color: var(--bg-white);
 
   & h2 {
     font-size: clamp(2.4rem, 2.8cqi, 2.8rem);
@@ -12,6 +13,8 @@
     display: flex;
     align-items: center;
     gap: 0.8rem;
+
+    color: var(--black);
 
     &::before,
     &::after {
@@ -44,6 +47,7 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 1rem;
+    color: var(--black);
   }
 
   & p {
@@ -51,6 +55,7 @@
     line-height: clamp(3rem, 3.5cqi, 3.5rem);
     font-weight: 400;
     text-align: center;
+    color: var(--black);
   }
 
   & nav {
@@ -85,6 +90,7 @@
       line-height: clamp(3rem, 3.5cqi, 3.5rem);
       font-weight: 400;
       transition: all 0.2s ease-in-out;
+      color: var(--black);
 
       &.active {
         color: var(--blue-clean);

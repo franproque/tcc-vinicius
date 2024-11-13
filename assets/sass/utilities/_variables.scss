@@ -24,6 +24,7 @@ body {
   --first-menu-font-color: #{$first-menu-font-color};
 
   --white: #{$white};
+  --txt-white: #{$white};
   --white-100: #{$white-100};
   --bg-white: #{$white};
 
@@ -32,6 +33,7 @@ body {
 
   --blue-lighthen: #{$blue-lighthen};
   --blue-light: #{$blue-light};
+  --bg-blue-light: #{$blue-light};
   --blue-clean: #{$blue-clean};
   --blue: #{$blue};
   --bg-blue: #{$blue};
@@ -40,23 +42,39 @@ body {
   --gray-100: #{$gray-100};
   --gray-200: #{$gray-200};
   --gray-300: #{$gray-300};
+  --bg-footer: #{$gray-300};
 
   --green: #{$green};
+
+  --border: transparent;
 }
 
 body.dark-mode {
-  --first-menu-background-color: #1c1e1f;
+  --first-menu-background-color: #{$black};
   --first-menu-font-color: white;
 
-  --white: white;
-  --white-100: #202325;
-  --bg-white: #181a1b;
+  --white: #{$white};
+  --txt-white: #{$black};
+  --white-100: #{$black};
+  --bg-white: #{$black};
 
-  --blue: rgba(208, 231, 255, 1);
-  --bg-blue: #1d4a72;
+  --blue: #{$white};
+  --bg-blue: #{$black};
+
+  .l-products__pagination {
+    --bg-blue: #{$white};
+  }
+
   --blue-light: #25282a;
+  --bg-blue-light: #{$black};
   --blue-lighthen: #1b1e1f;
 
-  --black: #e8e6e3;
+  --black: #{$white};
   --black-middle: rgba(140, 130, 115, 0.5);
+
+  --gray-100: #{$black};
+  --gray-300: #{$white};
+  --bg-footer: #{$black};
+
+  --border: #{$white};
 }

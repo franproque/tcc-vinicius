@@ -25,6 +25,29 @@ export default class ShortCut {
         ref.focus()
       }
 
+      if (key === '7' || key === '6') {
+        const id = href.slice(href.indexOf("#", 0) + 1)
+        const section = document.getElementById(id)
+        const header = document.querySelector('.header')
+        console.log(id, section, header);
+
+        if (section && header) {
+          const sectionRect = section.getBoundingClientRect()
+          const scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop
+          const targetY =
+            sectionRect.top +
+            scrollTop -
+            (header?.clientHeight - 95)
+
+          window.scrollTo({
+            behavior: 'smooth',
+            top: targetY,
+          })
+        }
+
+      }
+
 
     }, { 'disable_in_input': true, })
   }
