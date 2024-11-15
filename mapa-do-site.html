@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrinho</title>
+  <title>Home</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,10 +36,10 @@
           </li>
         </ul>
         <div class="header__controls">
-          <button class="button-font-increment button-font">A+</button>
-          <button class="button-font-decrement button-font">A-</button>
+          <button class="button-font-increment button-font" aria-label="Aumentar fonte">A+</button>
+          <button class="button-font-decrement button-font" aria-label="Diminuir fonte">A-</button>
           <button class="button-dark-mode">
-            <img src="imgs/dark-mode.svg" alt="Ativar o modo escuro">
+            <img src="imgs/dark-mode.svg" alt="Ativar/Desativar o modo escuro">
           </button>
         </div>
       </nav>
@@ -82,8 +82,8 @@
         <nav role="navigation">
           <ul class="header__menu-items">
             <li><span>5</span> <a href="#top">Ínicio</a></li>
-            <li><span>6</span> <a href="">Anunciar</a></li>
-            <li><span>7</span> <a href="">Quero Comprar</a></li>
+            <li><span>6</span> <a href="#advertise">Anunciar</a></li>
+            <li><span>7</span> <a href="#w-buy">Quero Comprar</a></li>
             <li><span>8</span> <a href="">Minha Conta</a></li>
             <li><span>S</span> <a href="">Suporte</a></li>
           </ul>
@@ -98,24 +98,56 @@
     </section>
   </header>
 
-  <main class="p-cart">
-    <section class="l-products">
-      <div class="l-products__buttons wrapper" role="grid">
-        <div>
-          <button class="button buy-cart">
-            Finalizar Compra
-          </button>
-        </div>
-        <div></div>
-        <div>
-          <button class="button button--inline clean-cart">
-            <picture><img src="/assets/svg/clear.svg" alt="Borracha" role="img" /></picture> <span>Limpar
-              Carrinho</span>
-          </button>
-        </div>
-      </div>
-      <div class="l-products__cards wrapper" role="grid"></div>
-      <div class="l-products__pagination wrapper"></div>
+  <main class="map">
+    <section class="s-map wrapper">
+      <h3>1. Página Inicial</h3>
+
+      <p>- Início – Volte à página inicial.</p>
+
+      <h3>2. Categorias de Produtos</h3>
+
+      <p>- Filtre as categorias por Valor, condição, categoria, desconto, popularidade, marca, entrega, estoque </p>
+      <p>- Tecnologia – Acesse produtos de tecnologia, como celulares, tablets e laptops.</p>
+      <p>- Veículos – Encontre produtos relacionados a veículos e acessórios.</p>
+      <p>- Casa e Móveis – Navegue por móveis e produtos para casa.</p>
+      <p>- Supermercado – Acesse itens de supermercado e produtos alimentícios.</p>
+      <p>- Eletrodoméstico – Veja eletrodomésticos como geladeiras, fogões e micro-ondas.</p>
+      <p>- Esportes e Fitness – Acesse equipamentos e acessórios de esporte e fitness.</p>
+
+      <h3>3. Ofertas Especiais (Popularidade)</h3>
+
+      <p>- Ver Ofertas – Acesse as promoções e descontos disponíveis.</p>
+      <p>- Mais Populares – Veja os produtos mais populares.</p>
+      <p>- Mais Bem Avaliados – Navegue pelos produtos mais bem avaliados.</p>
+
+      <h3>4. Acessibilidade e Suporte ao Cliente</h3>
+
+      <p>- Ver Acessibilidade do Site – Saiba mais sobre os recursos de acessibilidade do site.</p>
+      <p>- Solicitar uma Compra – Precisa de ajuda para comprar? Solicite que um profissional compre por você.</p>
+
+
+      <h3>5. Minha Conta</h3>
+
+      <p>- Minha conta – Acesse sua conta.</p>
+
+      <h3>6. Ajuda e Suporte</h3>
+
+      <p>- Contato – Entre em contato com nossa equipe de atendimento ao cliente.</p>
+      <p>- FAQ – Acesse as perguntas frequentes sobre o uso do site e produtos.</p>
+      <p>- Política de Privacidade – Leia nossa política de privacidade.</p>
+      <p>- Termos de Serviço – Consulte os termos de uso do site.</p>
+
+      <h3>7. Ferramentas para Anunciantes**</h3>
+
+      <p>- Anunciar Produto – Anuncie um produto preenchendo os dados ou solicitando ajuda especializada.</p>
+
+      <h3>Acessibilidade</h3>
+
+      <p>- <strong>Atalhos de Teclado</strong>: Use as teclas de navegação para saltar entre seções principais.</p>
+      <p>- <strong>Contraste Ajustável</strong>: Alterne entre modos de contraste para facilitar a leitura.</p>
+      <p>- <strong>Leitores de Tela</strong>: Este site é otimizado para leitores de tela.</p>
+      <p>- <strong>Aumentar ou diminuir fonte</strong>: Use os botões de acessibilidade de tamanho da fonte para ajustar
+        o tamanho dos textos do site</p>
     </section>
   </main>
 
@@ -132,10 +164,6 @@
         sensoriais usem os recursos disponíveis no site como compra e venda.</p>
     </section>
   </footer>
-
-  <audio class="sound-cart">
-    <source src="/assets/mp3/add-cart.mp3" type="audio/mp3">
-  </audio>
 
   <div vw class="enabled">
     <div vw-access-button class="active"></div>

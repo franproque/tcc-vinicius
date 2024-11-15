@@ -1036,4 +1036,21 @@ a:hover {
   margin-left: auto;
 }
 
+.s-map {
+  margin: clamp(3rem, 5cqi, 5rem) auto;
+  container-type: inline-size;
+}
+.s-map h3 {
+  font-size: clamp(2.4rem, 2.8cqi, 2.8rem);
+  line-height: clamp(3rem, 3.5cqi, 3.5rem);
+  font-weight: 600;
+  text-align: left;
+  margin: clamp(2rem, 3.5cqi, 3.5rem) 0;
+}
+.s-map p {
+  font-size: clamp(1.6rem, 2cqi, 2rem);
+  line-height: clamp(3rem, 3.5cqi, 3.5rem);
+  font-weight: 400;
+}
+
 /*# sourceMappingURL=styles.css.map */
